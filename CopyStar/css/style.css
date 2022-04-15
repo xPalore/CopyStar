@@ -1,0 +1,227 @@
+*,
+*:before *:after {
+    box-sizing: border-box;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Bahnschrift";
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+/* header */
+
+.header {
+    padding: 20px;
+    background-color: rgb(40, 184, 141);
+    box-shadow: 5px 1px 12px 2px rgb(40, 184, 141);
+}
+
+img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Bahnschrift";
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+
+.logo:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    font-size: 16px;
+}
+
+.nav ul li {
+    list-style-type: none;
+}
+
+.nav ul li+li {
+    margin-left: 15px;
+}
+
+.nav .nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav .nav-link:hover {
+    color: rgb(219, 217, 217);
+}
+
+
+/* main */
+
+.main-content {
+    margin: 25px 40px 15px 40px;
+}
+
+.main-content .title {
+    font-size: 28px;
+    text-align: center;
+}
+
+
+/* form */
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(37, 168, 129);
+}
+
+a:hover {
+    color: rgb(37, 168, 129);
+    text-decoration: underline;
+}
+
+.form-container {
+    border: 1.5px solid rgb(37, 168, 129);
+    padding: 40px;
+    background-color: rgb(245, 244, 244);
+    box-shadow: 0px 0px 20px 0px rgba(37, 168, 129, 0.774);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form .input {
+    width: 400px;
+    height: 24px;
+    font-size: 14px;
+    background-color: rgb(235, 232, 232);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 15px;
+}
+
+form .input-border {
+    border-bottom: 1px solid rgb(40, 184, 141);
+}
+
+form .input:active,
+ :hover,
+ :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+form .input-text {
+    padding-left: 3px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+form .checkbox {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+form .checkbox-text {
+    padding-left: 5px;
+}
+
+form .btn {
+    background-color: rgb(40, 184, 141);
+    border-radius: 8px;
+    border: unset;
+    box-shadow: 0px 0px 20px 0px rgba(37, 168, 129, 0.774);
+    padding: 8px 12px 8px 12px;
+    color: white;
+    font-family: "Bahnschrift";
+    font-size: 15px;
+}
+
+form .btn:hover {
+    box-shadow: 0px 0px 20px 0px rgba(37, 168, 129, 0.5);
+    cursor: pointer;
+    background-color: rgb(37, 168, 129);
+}
+
+
+/* errors */
+
+.error-input {
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.error-msg {
+    margin: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+
+
+/* footer */
+
+.footer {
+    box-shadow: 5px 1px 12px 2px rgb(40, 184, 141);
+    margin-top: auto;
+    padding: 20px;
+    background-color: rgb(40, 184, 141);
+}
+
+.footer .text {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
